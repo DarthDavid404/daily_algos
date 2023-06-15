@@ -1,7 +1,7 @@
 // Print integers from 0 to 255, and with each integer print the sum so far.
 
 function sumTo255() {
-    sum = 0
+    let sum = 0
     for (let i=0; i<255; i++) {
         sum += i
         console.log(i)
