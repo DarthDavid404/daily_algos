@@ -9,3 +9,11 @@ function sigma(num) {
 }
 
 console.log(sigma(5))
+
+// es6
+
+const sigma2 = num => {
+    return (num * (num+1)) /2
+}
+
+console.log(sigma2(5))
