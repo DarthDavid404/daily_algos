@@ -19,3 +19,26 @@ function maxMinAve(arr) {
 }
 
 maxMinAve([2,6,1,18,3,9])
+
+// es6
+
+const maxMinAveEs6 = arres6 => {
+    let maxes6 = arres6[0]
+    let mines6 = arres6[0]
+    let sumes6 = 0
+
+    for (const num of arres6) {
+        if (num > maxes6) {
+            maxes6 = num
+        }
+        if (num < mines6) { 
+            mines6 = num
+        }
+        sumes6 += num
+    }
+    console.log(mines6)
+    console.log(maxes6)
+    console.log(sumes6 / arres6.length)
+}
+
+maxMinAveEs6([2,6,1,18,3,9])
