@@ -9,16 +9,29 @@ import random
 def doubles():
     roll1 = random.randint(1, 6)
     roll2 = random.randint(1, 6)
-    roll1_arr = []
-    roll2_arr = []
+    roll_arr = []
+    average = 0
+    
     while roll1 != roll2:
-        print("running")
+        
         roll1=random.randint(1, 6)
         roll2=random.randint(1, 6)
-        roll1_arr.append(roll1)
-        roll2_arr.append(roll2)
+        roll_arr.append(roll1)
+        roll_arr.append(roll2)
         
-        
-    return [roll1_arr, roll2_arr]
+    average = len(roll_arr)
+    
+    min = roll_arr[0]
+    max = roll_arr[0]
+    
+    for num in roll_arr:
+        if num >= max:
+            max = num
+            
+        if num < min: 
+            min = num
+            
+
+    return [roll_arr, min, max, average]
 
 print(doubles())
