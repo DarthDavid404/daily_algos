@@ -1,13 +1,12 @@
 // Write a function factorial(num) that, given a number, returns the product (multiplication) of all positive integers from 1 up to number (inclusive).
 
 function factorial(num) {
-    product = 1
-    for (let i = 1; i < num + 1; i++){
-        product *= i
+    result = 1
+    for (let i=1; i<num + 1;i++) {
+        result *=i
     }
-    return product
+    return result
 }
-
 console.log(factorial(5))
 
 // es6
