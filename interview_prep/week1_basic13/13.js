@@ -2,11 +2,10 @@
 // end.
 
 function moveForward(arr) {
-    for (let i=0; i<arr.length; i++) {
-        arr[i] = arr[i + 1]
+    for (i in Range(0, len(arr)-1, 1)) {
+        arr[i] = arr[i+1]
     }
-    arr[arr.length-1] = 0
-    console.log(arr)
+    return arr
 }
 
 moveForward([1,2,3,4,5,6,7,8,9])
